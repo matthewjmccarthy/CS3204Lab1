@@ -30,7 +30,7 @@ def multiply_matrices(mat_A: list[list[int]], mat_B: list[list[int]]) -> list[li
     
     output_matrix = []
 
-    #Don't try to make sense of this if you value your sanity. Just know that it multiplies mat_A and mat_B and it hasn't broken yet.
+    #This is not trying to be particularly efficient or optimised. Just know that it multiplies mat_A and mat_B and it hasn't broken yet.
     for row in mat_A:
         row_array = []
         for i in range(len(mat_B)):
