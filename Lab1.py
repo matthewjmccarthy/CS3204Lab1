@@ -92,7 +92,7 @@ def plot_test(n: int, test_mode: int = 1, fit_line: bool = False) -> None:
 
     
     if fit_line: #Creates a line roughly matching the curve expected. Very optional
-        const = ((end - start) * (4/(n ** 4))) ** (1/3) #Constant needed to scale our line to fit data. Don't try to understand because it's not written out well. 
+        const = ((end - start) * (4/(n ** 4))) ** (1/3) #Constant needed to scale our line to fit data.
 
         best_fit_data = [(const * x) ** 3 for x in x_data] #Raising to the third power to match expected complexity, O(n^3), arising from analysis of my multiply_matrices() function 
         plt.plot(x_data, best_fit_data, 'g--')
